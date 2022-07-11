@@ -13,12 +13,12 @@ If running the script returns an error regarding about_Execution_Policies, you c
 This can be corrected by going to the script settings on Windows 10:
 ![image](https://user-images.githubusercontent.com/99374038/178181576-9a1866c9-4267-462c-b420-927d6a60c08a.png)  
 You need to ensure this setting is enabled and applied, which will end up looking like this when it is:
-![image](https://user-images.githubusercontent.com/99374038/178181626-52bc71aa-2ba4-4200-85f9-90dd0373b3aa.png)
+![image](https://user-images.githubusercontent.com/99374038/178181626-52bc71aa-2ba4-4200-85f9-90dd0373b3aa.png)  
 Powershell scripts can now be run locally. 
 
 # Usage 
 When running the script, the user will be prompted with either getting the current hashes of the files or enabling the FIM to monitor for hash changes in the files. Collecting the hashes will create a new file in the FIM directory called FIM-hashes.txt:
-![image](https://user-images.githubusercontent.com/99374038/178183007-e423a201-c16b-43c8-af61-6a8ec30f52c8.png)
+![image](https://user-images.githubusercontent.com/99374038/178183007-e423a201-c16b-43c8-af61-6a8ec30f52c8.png)  
 The formatting within the file is (filepath)|(file hash). 
 
 Enabling the FIM will create a persistent monitor that checks for hash changes every second for all of the files in the Files folder, and create a simple alert to say as much. To provide an example, I ran the FIM before changing the contents of one of the files in the File folder. This caused the following error message to appear every second: 
