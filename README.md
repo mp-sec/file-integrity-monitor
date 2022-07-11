@@ -19,7 +19,7 @@ Powershell scripts can now be run locally.
 # Usage 
 When running the script, the user will be prompted with either getting the current hashes of the files or enabling the FIM to monitor for hash changes in the files. Collecting the hashes will create a new file in the FIM directory called FIM-hashes.txt:
 ![image](https://user-images.githubusercontent.com/99374038/178183007-e423a201-c16b-43c8-af61-6a8ec30f52c8.png)  
-The formatting within the file is (filepath)|(file hash). 
+The formatting within the file is (filepath)|(file hash), where the file hash is a SHA-512 hash. 
 
 Enabling the FIM will create a persistent monitor that checks for hash changes every second for all of the files in the Files folder, and create a simple alert to say as much. To provide an example, I ran the FIM before changing the contents of one of the files in the File folder. This caused the following error message to appear every second: 
 ![image](https://user-images.githubusercontent.com/99374038/178183910-9d6c17dd-6c84-4699-862f-13572b7b41db.png)
