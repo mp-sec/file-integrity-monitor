@@ -9,6 +9,7 @@ If running the script returns an error regarding about_Execution_Policies, you c
 ![image](https://user-images.githubusercontent.com/99374038/178181179-ad8e0003-5ad8-4afb-a88f-2716b2292c14.png)
 This can be corrected by going to the script settings on Windows 10:
 ![image](https://user-images.githubusercontent.com/99374038/178181576-9a1866c9-4267-462c-b420-927d6a60c08a.png)
+
 You need to ensure this setting is enabled and applied, which will end up looking like this when it is:
 ![image](https://user-images.githubusercontent.com/99374038/178181626-52bc71aa-2ba4-4200-85f9-90dd0373b3aa.png)
 Powershell scripts can now be run locally. 
